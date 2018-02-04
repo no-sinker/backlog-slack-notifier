@@ -1,0 +1,78 @@
+{
+  "name": "backlog-slack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "slack-node": "^0.1.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
+
+///
+// (f7de7ca4-0910-11e8-b048-05f286ad6605) Method request headers:
+// {CloudFront-Viewer-Country=JP, CloudFront-Forwarded-Proto=https, CloudFront-Is-Tablet-Viewer=false, CloudFront-Is-Mobile-Viewer=false, User-Agent=Backlog Webhook, X-Forwarded-Proto=https, CloudFront-Is-SmartTV-Viewer=false, Host=1450qpnlpe.execute-api.us-east-1.amazonaws.com, Accept-Encoding=gzip,deflate, X-Forwarded-Port=443, X-Amzn-Trace-Id=Root=1-5a7600df-60d34b675a11c9d64f10a800, Via=1.1 f8d8adbca93b2103b91125b9af9bf238.cloudfront.net (CloudFront), X-Amz-Cf-Id=08HpuqyH9rTOprBKasCKR5d2zwCSo01pbVkSLFGaWD8dtq0go-bzcA==, X-Forwarded-For=52.68.222.36, 52.46.50.55, CloudFront-Is-Desktop-Viewer=true, Content-Type=application/json; charset=UTF-8}
+///
+// (f7de7ca4-0910-11e8-b048-05f286ad6605) Method request body before transformations: 
+{"created":"2018-02-03T18:35:11Z",
+ "project":{"archived":false,
+	    "projectKey":"TEST",
+	    "name":"TestProject",
+	    "chartEnabled":false,
+	    "id":100,
+	    "subtaskingEnabled":false},
+ "id":10,
+ "type":1,
+ "content":{"summary":"test issue",
+	    "key_id":100,
+	    "customFields":[],
+	    "dueDate":"",
+	    "description":"test description",
+	    "priority":{"name":"","id":null},
+	    "resolution":{"name":"","id":null},
+	    "actualHours":null,
+	    "issueType":{"color":"null",
+			 "name":"Bug",
+			 "displayOrder":null,
+			 "id":400,
+			 "projectId":null},
+	    "milestone":[{"archived":"false",
+			  "releaseDueDate":"null",
+			  "name":"prototype release",
+			  "displayOrder":null,
+			  "description":"",
+			  "id":null,
+			  "projectId":null,
+			  "startDate":"null"},
+			 {"archived":"false",
+			  "releaseDueDate":"null",
+			  "name":"alpha release",
+			  "displayOrder":null,
+			  "description":"",
+			  "id":null,
+			  "projectId":null,
+			  "startDate":"null"},
+			 {"archived":"false",
+			  "releaseDueDate":"null",
+			  "name":"beta release",
+			  "displayOrder":null,
+			  "description":"",
+			  "id":null,
+			  "projectId":null,
+			  "startDate":"null"},
+			 {"archived":"false",
+			  "releaseDueDate":"null",
+			  "nam ":""}]
+	   }}
+//[TRUNCATED]
+
+(f7de7ca4-0910-11e8-b048-05f286ad6605) Endpoint request URI: https://lambda.us-east-1.amazonaws.com/2015-03-31/functions/arn:aws:lambda:us-east-1:503419916658:function:backlog2slack/invocations
+
+//
+(f7de7ca4-0910-11e8-b048-05f286ad6605) Endpoint request headers: {x-amzn-lambda-integration-tag=f7de7ca4-0910-11e8-b048-05f286ad6605, Authorization=************************************************************************************************************************************************************************************************************************************************************************************************************************3deeba, X-Amz-Date=20180203T183511Z, x-amzn-apigateway-api-id=1450qpnlpe, X-Amz-Source-Arn=arn:aws:execute-api:us-east-1:503419916658:1450qpnlpe/backlog_at_no_sinker/POST/backlog2slack/{room}, Accept=application/json, User-Agent=AmazonAPIGateway_1450qpnlpe, X-Amz-Security-Token=FQoDYXdzEGMaDI5ElwbTfYisXdAfOiK3A0bFRiJ6TpArDdnZrsIT6tkdLnR20sMAEchBlw6XQoqJNP7SIE1VODP6dq3KtVoK4ydHgPH3yZ/aD5PaVr0gaosQBgrj16oxerL3qzxAU+Id1oMDhB8lsZqJeSP0tKSon842OCOsumDPFxbTMUrPt9sIgREZwbvluONkqbSfdAeesJg4/2DW/xJJ5GCKk0IsNxPGnSzxiwjDBaYA3y/BQ3xq5YGPwUEWmPKFFhz8A9yfgD2172ciVpnjxU4paUkNmJ08Dbz1Awk7LpgSnJzCz1zda3o4J1aK8+EI
+// [TRUNCATED]
