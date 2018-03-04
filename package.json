@@ -6,7 +6,10 @@
   "dependencies": {
     "slack-node": "^0.1.8"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^4.18.2",
+    "eslint-config-google": "^0.9.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
