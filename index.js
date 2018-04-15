@@ -150,13 +150,14 @@ const postSlack = (chan, message, comment) => {
 }
 
 // Main Handler
-module.exports.hander = (event, context, callback) => {
+exports.handler = (event, context, callback) => {
     // console.log('event: ' + JSON.stringify(event, null, 4));
-    if (event.params.path.room && event.body_json) {
+    if (event.pathParameters.room && event.body) {
         // 通知先チャンネル取得
-        const room = event.params.path.room;
+        const room = event.pathParameters.room;
         // メッセージ作成
-        const slackObj = makeChatMessage(event.body_json);
+	const body_json = JSON.parse(event.body);
+        const slackObj = makeChatMessage(body_json);
         // Slack投稿
         if (slackObj) {
             postSlack(room, slackObj['message'], slackObj['comment']);
