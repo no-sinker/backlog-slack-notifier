@@ -156,7 +156,7 @@ exports.handler = (event, context, callback) => {
         // 通知先チャンネル取得
         const room = event.pathParameters.room;
         // メッセージ作成
-	const body_json = JSON.parse(event.body);
+        const body_json = JSON.parse(event.body);
         const slackObj = makeChatMessage(body_json);
         // Slack投稿
         if (slackObj) {
