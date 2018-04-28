@@ -60,3 +60,6 @@ typings/
 # serverless framework files
 serverless.yml
 .serverless
+
+# for typescript
+.webpack
